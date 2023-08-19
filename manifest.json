@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Breaking News Extension",
+  "description": "Fetches and displays the current most breaking news headlines worldwide.",
+  "version": "1.0",
+  "permissions": ["http://*/*", "https://*/*", "activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_security_policy": "script-src 'self' https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=a49db6b64cbd48a2bfbd611da78a104a; object-src 'self'"
+}
